@@ -1,0 +1,8 @@
+name: deploy
+on: workflow_dispatch
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod-repo2
+    steps:
+      - run: echo "deployed to repo2"
